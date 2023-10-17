@@ -14,16 +14,21 @@ const NewProduct = () => {
 
         const basePrice = newProduct.current[2].value;
         const salePrice = newProduct.current[3].value;
+        const categorie = newProduct.current[5].value
 
         if (!isPositiveNumber(basePrice) || !isPositiveNumber(salePrice)) {
             alert("Attention, les prix de base et de vente doivent être positifs.");
             return;
         }
 
+        if (categorie === "Catégorie") {
+            alert("Attention, vous devez sélectionner au moins une catégorie.");
+            return;
+        }
+
         const product = {
             title: newProduct.current[0].value,
             description: newProduct.current[1].value,
-            categories: newProduct.current[5].value,
             basePrice,
             salePrice,
             imageUrl: newProduct.current[4].value
