@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import { useSelector } from 'react-redux';
 import './App.css';
+import { isEmpty } from './components/utils';
+import Product from './components/products';
+import NewProduct from './components/newProduct';
 
 function App() {
+  const products = useSelector(state => state.productsReducer);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Header />
+    <NewProduct />
+        <main>
+          <div className='products'>
+            {!isEmpty(products) && products.map((product, index) => (
+              <Product product={product} key={index} />
+            ))}
+          </div>
+        </main>
+    </>
+  );
+}
+
+function Header() {
+  return (
+    <header>
+    <div className='h1'>
+    <h1>Shop Tendance</h1>
     </div>
+    <div className='h2'>  
+    <h2> Inventory Management</h2>
+    </div>
+  </header>  
   );
 }
 
