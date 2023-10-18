@@ -31,11 +31,13 @@ const NewProduct = () => {
             description: newProduct.current[1].value,
             basePrice,
             salePrice,
+            categorie,
             imageUrl: newProduct.current[4].value
         }
-        await dispatch(addProduct(product));
 
+        await dispatch(addProduct(product));
         dispatch(getProducts());
+
         newProduct.current.reset();
         newProduct.current.querySelectorAll('input[type="text"], input[type="number"], input[type="URL"]').forEach((input) => {
             input.value = "";
