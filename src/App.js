@@ -9,15 +9,15 @@ function App() {
 
   return (
     <>
-    <Header />
-    <NewProduct />
-        <main>
-          <div className='products'>
-            {!isEmpty(products) && products.map((product, index) => (
-              <Product product={product} key={index} />
-            ))}
-          </div>
-        </main>
+      <Header />
+      <NewProduct />
+      <main>
+        <div className='products'>
+          {!isEmpty(products) && products.map((product, index) => (
+            <Product product={product} key={index} />
+          ))}
+        </div>
+      </main>
     </>
   );
 }
@@ -25,13 +25,13 @@ function App() {
 function Header() {
   return (
     <header>
-    <div className='h1'>
-    <h1>Shop Tendance</h1>
-    </div>
-    <div className='h2'>  
-    <h2> Inventory Management</h2>
-    </div>
-  </header>  
+      <div className='h1'>
+        <h1>Shop Tendance</h1>
+      </div>
+      <div className='h2'>
+        <h2> Inventory Management</h2>
+      </div>
+    </header>
   );
 }
 

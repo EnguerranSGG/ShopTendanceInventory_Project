@@ -25,7 +25,8 @@ export default function productsReducer(state = initialState, action) {
                         imageUrl: action.payload.imageUrl
                     }
                 } else {
-                return product}
+                    return product
+                }
             })
         case DELETE_PRODUCT:
             return state.filter((product) => product.id != action.payload);

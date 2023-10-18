@@ -48,7 +48,7 @@ const NewProduct = () => {
         <button class="btn" id="btnForm" onClick={focus}>Ajouter un nouveau produit</button>
         <div className="newProduct">
             <form ref={newProduct} onSubmit={e => handleNewProduct(e)}>
-            <h2> Nouveau produit :</h2>
+                <h2> Nouveau produit :</h2>
                 <div><input type="text" placeholder="Nom" required /></div>
                 <div><input type="text" id="description" placeholder="Description" required /></div>
                 <div><input type="number" placeholder="Prix de base" required /></div>
@@ -68,7 +68,7 @@ const NewProduct = () => {
                     <option value="AccessoiresSport">Accessoires de sport</option>
                 </select></div>
                 <div className="btnsForm"><input class="btn" id="btnAdd" type="submit" value="Ajouter le nouveau produit" />
-                <button class="btn" id="btnX" onClick={close}>X</button></div>
+                    <button class="btn" id="btnX" onClick={close}>X</button></div>
             </form>
         </div></>);
 };
