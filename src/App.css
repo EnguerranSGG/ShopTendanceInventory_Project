@@ -132,7 +132,17 @@ form h2 {
 .addProduct input {
   width: 400px;
   margin-top: 5%;
+  border-radius: 5px;
+  border-color: black;
+  background-color: rgba(240, 248, 255, 0.8);
 }
+
+form select {
+  width: 400px;
+  margin-top: 5%;
+  border-radius: 5px;
+  border-color: black;
+  background-color: rgba(240, 248, 255, 0.8);}
 
 /** Zone édition */
 
@@ -163,11 +173,6 @@ form h2 {
   font-size: 2.5vw;
   text-align: center;
   color: aliceblue;
-}
-
-.editProduct input {
-  width: 400px;
-  margin-top: 5%;
 }
 
 .default {
@@ -285,14 +290,18 @@ form h2 {
     width: 300px;
     margin-top: 5%;
   }
-}
 
-.editProduct input {
-  width: 300px;
+  form select {
+    width: 300px;
+  }
+  
+  .editProduct input {
+    width: 300px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  
+
   header h1 {
     font-size: 8vw;
     padding-left: 1%;
@@ -340,11 +349,16 @@ form h2 {
   }
   
   .addProduct input {
-    width: 450px;
+    width: 600px;
     margin-top: 5%;
+  }
+
+  .editProduct input {
+    width: 600px;
+  }
+
+  form select {
+    width: 600px;
   }
 }
 
-.editProduct input {
-  width: 500px;
-}
