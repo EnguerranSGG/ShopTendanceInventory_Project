@@ -13,16 +13,13 @@
       "imageUrl": "https://img.freepik.com/photos-gratuite/chaussure-sport-bleue-deliee-prete-action-generee-par-ia_188544-25546.jpg?w=1380&t=st=1697105043~exp=1697105643~hmac=cc665d1b4e43b9f351861a6582d33745651097e13e54936ae6254331580a9067"
     },
     {
-      "id": 2,
       "title": "T-shirt Blanc Classique",
       "description": "Un t-shirt blanc basique pour toutes les occasions.",
-      "categories": [
-        "Vêtements",
-        "Homme"
-      ],
-      "basePrice": 15,
-      "salePrice": 10,
-      "imageUrl": "https://img.freepik.com/photos-gratuite/t-shirt-blanc-bande-noire-haut_1340-42520.jpg?w=740&t=st=1697105173~exp=1697105773~hmac=bedfff8d9b7498a687441916f2fd27889c7d2cb721e27ca4174335f20b9f5539"
+      "basePrice": "15",
+      "salePrice": "10",
+      "categories": "VétementsHomme",
+      "imageUrl": "https://img.freepik.com/photos-gratuite/t-shirt-blanc-bande-noire-haut_1340-42520.jpg?w=740&t=st=1697105173~exp=1697105773~hmac=bedfff8d9b7498a687441916f2fd27889c7d2cb721e27ca4174335f20b9f5539",
+      "id": 2
     },
     {
       "id": 3,
