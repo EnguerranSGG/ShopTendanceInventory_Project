@@ -45,7 +45,7 @@ const NewProduct = () => {
     }
 
     return (<>
-        <button class="btn" id="btnForm" onClick={focus}>Ajouter un nouveau produit</button>
+        <button className="btn" id="btnForm" onClick={focus}>Ajouter un nouveau produit</button>
         <div className="newProduct">
             <form ref={newProduct} onSubmit={e => handleNewProduct(e)}>
                 <h2> Nouveau produit :</h2>
@@ -67,8 +67,8 @@ const NewProduct = () => {
                     <option value="ChaussuresSport">Chaussures de sport</option>
                     <option value="AccessoiresSport">Accessoires de sport</option>
                 </select></div>
-                <div className="btnsForm"><input class="btn" id="btnAdd" type="submit" value="Ajouter le nouveau produit" />
-                    <button class="btn" id="btnX" onClick={close}>X</button></div>
+                <div className="btnsForm"><input className="btn" id="btnAdd" type="submit" value="Ajouter le nouveau produit" />
+                    <button className="btn" id="btnX" onClick={close}>X</button></div>
             </form>
         </div></>);
 };
