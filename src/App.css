@@ -277,22 +277,22 @@ form h2 {
     padding: 3%;
   }
   
-  form h2 {
-    text-align: center;
-    color: aliceblue;
-  }
-  
   #description {
     padding-bottom: 5%;
   }
   
   .addProduct input {
-    width: 200px;
+    width: 300px;
     margin-top: 5%;
   }
 }
 
+.editProduct input {
+  width: 300px;
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
+  
   header h1 {
     font-size: 8vw;
     padding-left: 1%;
@@ -304,8 +304,8 @@ form h2 {
   }
 
   .products img {
-    width: 550px;
-    height: 500px;
+    width: 650px;
+    height: 600px;
   }
 
   .products {
@@ -317,6 +317,12 @@ form h2 {
   }
 
   .product {
+    font-size: 2.5vw;
+  }
+
+  #btnForm {
+    margin-top: 1%;
+    margin-bottom: 1%;
     font-size: 2.5vw;
   }
   
@@ -337,4 +343,8 @@ form h2 {
     width: 450px;
     margin-top: 5%;
   }
+}
+
+.editProduct input {
+  width: 500px;
 }
