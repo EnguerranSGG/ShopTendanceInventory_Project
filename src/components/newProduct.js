@@ -56,16 +56,10 @@ const NewProduct = () => {
                 <div><input type="URL" placeholder="URL de l'image" /></div>
                 <div><select name="categorie" placeholder="Catégorie" required>
                     <option> Catégorie </option>
-                    <option value="VétementsHomme"> Vétements pour homme</option>
-                    <option value="VétempentsFemme">Vétements pour femme</option>
-                    <option value="ChaussuresHomme">Chaussures pour homme</option>
-                    <option value="ChaussuresFemme">Chaussures pour femme</option>
-                    <option value="AccessoiresHomme">Accessoires pour homme</option>
-                    <option value="AccessoiresFemme">Accessoires pour femme</option>
-                    <option value="AccessoiresUnisexe">Accessoires unisexe</option>
-                    <option value="VétementsSport">Vétements de sport</option>
-                    <option value="ChaussuresSport">Chaussures de sport</option>
-                    <option value="AccessoiresSport">Accessoires de sport</option>
+                    <option value="Hommes">Vétements pour homme</option>
+                    <option value="Femmes">Vétements pour femme</option>
+                    <option value="Ados">Vétements pour ado</option>
+                    <option value="Bébés">Vétements pour bébé"</option>
                 </select></div>
                 <div className="btnsForm"><input className="btn" id="btnAdd" type="submit" value="Ajouter le nouveau produit" />
                     <button className="btn" id="btnX" onClick={close}>X</button></div>

@@ -42,16 +42,10 @@ const Product = ({ product }) => {
                     <div><p>Prix de vente :</p><input type="number" name="salePrice" placeholder="Prix de vente" defaultValue={product.salePrice} />
                         <div><p>Catégorie :</p>
                             <select name="categories" placeholder="Catégorie" defaultValue={product.categories} required>
-                                <option value="VétementsHomme"> Vétements pour homme</option>
-                                <option value="VétempentsFemme">Vétements pour femme</option>
-                                <option value="ChaussuresHomme">Chaussures pour homme</option>
-                                <option value="ChaussuresFemme">Chaussures pour femme</option>
-                                <option value="AccessoiresHomme">Accessoires pour homme</option>
-                                <option value="AccessoiresFemme">Accessoires pour femme</option>
-                                <option value="AccessoiresUnisexe">Accessoires unisexe</option>
-                                <option value="VétementsSport">Vétements de sport</option>
-                                <option value="ChaussuresSport">Chaussures de sport</option>
-                                <option value="AccessoiresSport">Accessoires de sport</option>
+                                <option value="Hommes">Vétements pour homme</option>
+                                <option value="Femmes">Vétements pour femme</option>
+                                <option value="Ados">Vétements pour ado</option>
+                                <option value="Bébés">Vétements pour bébé"</option>
                             </select></div>
                         <div><p>URL de l'image :</p></div><input type="url" name="imageUrl" placeholder="URL de l'image" defaultValue={product.imageUrl} /></div>
                     <div><input className="btn" id="btnAdd" type="submit" value="Modifier" /><button className="btn" id="btnX" onClick={() => setEditToggle(false)}>X</button></div></form></div>) : (

@@ -186,10 +186,7 @@ form select {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  gap: 3%;
-  margin-top: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin: 0.3%;
 }
 
 .product {
@@ -198,12 +195,13 @@ form select {
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 10px 10px 30px black;
+  box-shadow: 10px 10px 20px black;
+  margin: 3%;
 }
 
-.product img {
+.product img {  
   width: 450px;
-  height: 400px;
+  height: 450px;
   border-radius: 10px;
   margin-top: 0.2%;
 }
