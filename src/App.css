@@ -7,8 +7,6 @@ body {
 /** Zone header */
 
 header {
-  padding-left: 0.5%;
-  padding-right: 0.5%;
   border-bottom: 1px solid black;
 }
 
@@ -23,6 +21,35 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  text-decoration: underline;
+}
+
+nav {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: auto ;
+}
+
+nav a {
+  display: block;
+  width : 100%;
+  font-size: 2vw;
+  text-align: center;
+  text-decoration: none;
+  border-right: 1px solid aliceblue;
+  border-left: 1px solid aliceblue;
+  border-collapse: collapse;
+  color: aliceblue;
+  background-color: black;
+}
+
+nav a:visited {
+  color: aliceblue;
+}
+
+nav a:hover {
+  color: black;
+  background-color: white;
 }
 
 /** Zone btns modale */
