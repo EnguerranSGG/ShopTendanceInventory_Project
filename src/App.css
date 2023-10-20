@@ -6,10 +6,6 @@ body {
 
 /** Zone header */
 
-header {
-  border-bottom: 1px solid black;
-}
-
 .h1 {
   font-size: 3.5vw;
   display: flex;
@@ -41,6 +37,7 @@ nav a {
   border-collapse: collapse;
   color: aliceblue;
   background-color: black;
+  transition-duration: 250ms;
 }
 
 nav a:visited {
@@ -48,6 +45,11 @@ nav a:visited {
 }
 
 nav a:hover {
+  color: black;
+  background-color: white;
+}
+
+nav a:focus {
   color: black;
   background-color: white;
 }
