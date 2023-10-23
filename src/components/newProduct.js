@@ -14,14 +14,14 @@ const NewProduct = () => {
 
         const basePrice = newProduct.current[2].value;
         const salePrice = newProduct.current[3].value;
-        const categorie = newProduct.current[5].value
+        const categories = newProduct.current[5].value
 
         if (!isPositiveNumber(basePrice) || !isPositiveNumber(salePrice)) {
             alert("Attention, les prix de base et de vente doivent être positifs.");
             return;
         }
 
-        if (categorie === "Catégorie") {
+        if (categories === "Catégorie") {
             alert("Attention, vous devez sélectionner au moins une catégorie.");
             return;
         }
@@ -31,7 +31,7 @@ const NewProduct = () => {
             description: newProduct.current[1].value,
             basePrice,
             salePrice,
-            categorie,
+            categories,
             imageUrl: newProduct.current[4].value
         }
 
@@ -54,7 +54,7 @@ const NewProduct = () => {
                 <div><input type="number" placeholder="Prix de base" required /></div>
                 <div><input type="number" placeholder="Prix de vente" required /></div>
                 <div><input type="URL" placeholder="URL de l'image" /></div>
-                <div><select name="categorie" placeholder="Catégorie" required>
+                <div><select name="categories" placeholder="Catégorie" required>
                     <option> Catégorie </option>
                     <option value="Hommes">Vétements pour homme</option>
                     <option value="Femmes">Vétements pour femme</option>

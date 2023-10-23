@@ -48,7 +48,7 @@ const Product = ({ product }) => {
                                 <option value="Bébés">Vétements pour bébé"</option>
                             </select></div>
                         <div><p>URL de l'image :</p></div><input type="url" name="imageUrl" placeholder="URL de l'image" defaultValue={product.imageUrl} /></div>
-                    <div><input className="btn" id="btnAdd" type="submit" value="Modifier" /><button className="btn" id="btnX" onClick={() => setEditToggle(false)}>X</button></div></form></div>) : (
+                    <div className="btnsForm"><input className="btn" id="btnAdd" type="submit" value="Modifier" /><button className="btn" id="btnX" onClick={() => setEditToggle(false)}>X</button></div></form></div>) : (
                 <p className="default">{product.content}</p>
             )
             }
