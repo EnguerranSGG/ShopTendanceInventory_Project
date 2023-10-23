@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+img {
+  object-fit: cover;
+}
+
 /** Zone header */
 
 .h1 {
