@@ -1,33 +1,33 @@
 import './App.css';
 import NewProduct from './components/newProduct';
 import { NavLink, Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { AllProducts, MenProducts, WomenProducts, BabiesProducts, TeenageProducts } from './components/filters';
+import { FilteredProducts } from './components/filter';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <><Header /></>,
-    errorElement: <h1>Page not found</h1>,
+    errorElement: <h1>Désolé mais cette page n'existe pas.</h1>,
     children: [
       {
         path: '',
-        element: <><AllProducts /></>
+        element: <><FilteredProducts category={''}/></>
       },
       {
         path: 'Hommes',
-        element: <><MenProducts /></>
+        element: <><FilteredProducts category={'Hommes'} /></>
       },
       {
         path: 'Femmes',
-        element: <><WomenProducts /></>
+        element: <><FilteredProducts category={'Femmes'} /></>
       },
       {
         path: 'Ados',
-        element: <><TeenageProducts /></>
+        element: <><FilteredProducts category={'Ados'} /></>
       },
       {
         path: 'Bebes',
-        element: <><BabiesProducts /></>
+        element: <><FilteredProducts category={'Bébés'} /></>
       }
     ]
   }
