@@ -27,6 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'Bebes',
+        
         element: <><FilteredProducts category={'Bébés'} /></>
       }
     ]

@@ -4,7 +4,9 @@ import Product from './products';
 
 export function FilteredProducts({ category }) {
     const products = useSelector(state => state.productsReducer);
-    const filteredProducts = products.filter(product => product.categories === category);
+    const filteredProducts = (products?.filter) ?
+    products.filter(product => product.categories === category) :
+    null;
 
     if (category === '') {
         return <main>
