@@ -31,7 +31,7 @@ const Product = ({ product }) => {
                 <p>Prix de base : {product.basePrice}€</p>
                 <p>Prix de vente : {product.salePrice}€</p>
                 <p>{product.categories}</p>
-                <button id="btnMod" onClick={() => setEditToggle(!editToggle)}>Modifier</button><button id="btnMod" onClick={() => dispatch(deleteProduct(product.id))}>Supprimer</button>
+                <div><button id="btnMod" onClick={() => setEditToggle(!editToggle)}>Modifier</button><button id="btnMod" onClick={() => dispatch(deleteProduct(product.id))}>Supprimer</button></div>
             </div>
             {editToggle ? (
                 <div className="editProduct"><form onSubmit={handleEdit} ref={editedProduct}>

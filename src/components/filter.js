@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import { isEmpty } from './utils';
 import Product from './products';
 
+
 export function FilteredProducts({ category }) {
     const products = useSelector(state => state.productsReducer);
     const filteredProducts = (products?.filter) ?

@@ -86,6 +86,7 @@ nav a:focus {
   background-color: white;
   margin-left: 1%;
   margin-top: 1%;
+  transition-duration: 250ms;
 }
 
 #btnForm:hover,
@@ -238,10 +239,15 @@ form select {
 }
 
 .product img {
-  width: 450px;
-  height: 450px;
-  border-radius: 10px;
-  margin-top: 0.2%;
+  width: 100%;
+  height: 460px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.product div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5%;
 }
 
 .product:hover {
@@ -313,6 +319,7 @@ form select {
   .products img {
     width: 350px;
     height: 300px;
+    border-radius: 10px;
   }
 
   .products {
